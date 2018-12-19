@@ -1,0 +1,139 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MainDialog DIALOG PRELOAD DISCARDABLE  0, 0, 216, 133
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Display Calculator"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Calculate",IDOK,56,112,50,14
+    LTEXT           "&Pixel Dimensions (W/H)",IDC_STATIC,5,6,51,26
+    EDITTEXT        IDC_PIXDEM_X_IN,57,6,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIXDEM_Y_IN,57,20,49,12,ES_AUTOHSCROLL
+    LTEXT           "Aspect &Ratio",IDC_STATIC,5,35,50,11
+    EDITTEXT        IDC_RATIO_IN,57,35,49,12,ES_AUTOHSCROLL
+    LTEXT           "&Size in inches",IDC_STATIC,5,50,50,16
+    EDITTEXT        IDC_SIZE_IN,57,50,49,12,ES_AUTOHSCROLL
+    LTEXT           "Visual &Acuity",IDC_STATIC,5,65,50,16
+    EDITTEXT        IDC_ACUITY_IN,57,65,49,12,ES_AUTOHSCROLL
+    LTEXT           "&Distance in inches",IDC_STATIC,5,80,50,16
+    EDITTEXT        IDC_DISTANCE_IN,57,80,49,12,ES_AUTOHSCROLL
+    LTEXT           "&Cycles per degree",IDC_STATIC,5,96,51,16
+    EDITTEXT        IDC_CYCLES_IN,57,95,49,12,ES_AUTOHSCROLL
+    LTEXT           "Pixel Dimensions (W/H)",IDC_STATIC,111,6,51,26
+    EDITTEXT        IDC_PIXDEM_X_OUT,163,6,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_PIXDEM_Y_OUT,163,20,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Aspect Ratio",IDC_STATIC,111,35,50,13
+    EDITTEXT        IDC_RATIO_OUT,163,35,49,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Size in inches",IDC_STATIC,111,49,50,16
+    EDITTEXT        IDC_SIZE_OUT,163,49,49,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Pixels per inch",IDC_STATIC,111,64,50,16
+    EDITTEXT        IDC_PPI_OUT,163,64,49,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Distance in inches",IDC_STATIC,111,79,50,16
+    EDITTEXT        IDC_DISTANCE_OUT,163,79,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Physical dimensions ",IDC_STATIC,111,95,51,16
+    EDITTEXT        IDC_PHYSDEM_X_OUT,163,93,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_PHYSDEM_Y_OUT,163,107,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Mode"
+    BEGIN
+        MENUITEM "&Distance",                   ID_MODE_DISTANCE
+        MENUITEM "&Size",                       ID_MODE_SIZE
+        MENUITEM "&Resolution",                 ID_MODE_RESOLUTION
+        MENUITEM SEPARATOR
+        MENUITEM "Metric Physical Dimension",   ID_MODE_METRICPHYSICALDIMENSION
+
+    END
+    POPUP "&Help", HELP
+    BEGIN
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_ABOUTTEXT           "Display Calculator for Windows (Licensed under WTFPL, written in JS by Eric Rucker, translated to Windows/C by Calvin Buckley)"
+    IDS_ENTRYERR            "There was an invalid number entered."
+    IDS_TITLE_DIST          "Display Calculator (Distance)"
+    IDS_TITLE_SIZE          "Display Calculator (Size)"
+    IDS_TITLE_RES           "Display Calculator (Resolution)"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
